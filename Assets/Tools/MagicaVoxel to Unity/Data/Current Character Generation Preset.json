@@ -1,0 +1,292 @@
+﻿{
+    "Head": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0,
+        "EnableX": true,
+        "EnableY": false,
+        "EnableZ": true,
+        "SizeX": 7,
+        "SizeY": 7,
+        "SizeZ": 7,
+        "SkinColor": {
+            "r": 0.801886796951294,
+            "g": 0.6728686094284058,
+            "b": 0.5787201523780823,
+            "a": 1.0
+        }
+    },
+    "Neck": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0,
+        "EnableX": true,
+        "EnableY": false,
+        "EnableZ": true,
+        "SizeX": 3,
+        "SizeY": 1,
+        "SizeZ": 3,
+        "SkinColor": {
+            "r": 0.9058823585510254,
+            "g": 0.7098039388656616,
+            "b": 0.5686274766921997,
+            "a": 1.0
+        }
+    },
+    "Body": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0,
+        "EnableX": true,
+        "EnableY": false,
+        "EnableZ": true,
+        "SizeX": 5,
+        "SizeY": 5,
+        "SizeZ": 3,
+        "SkinColor": {
+            "r": 0.9058823585510254,
+            "g": 0.7098039388656616,
+            "b": 0.5686274766921997,
+            "a": 1.0
+        }
+    },
+    "Hip": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0,
+        "EnableX": false,
+        "EnableY": false,
+        "EnableZ": false,
+        "SizeX": 5,
+        "SizeY": 1,
+        "SizeZ": 3,
+        "SkinColor": {
+            "r": 0.9058823585510254,
+            "g": 0.7098039388656616,
+            "b": 0.5686274766921997,
+            "a": 1.0
+        }
+    },
+    "LegU": {
+        "Left": {
+            "X": 0,
+            "Y": 0,
+            "Z": 0,
+            "EnableX": true,
+            "EnableY": false,
+            "EnableZ": true,
+            "SizeX": 1,
+            "SizeY": 3,
+            "SizeZ": 1,
+            "SkinColor": {
+                "r": 0.9058823585510254,
+                "g": 0.7098039388656616,
+                "b": 0.5686274766921997,
+                "a": 1.0
+            }
+        },
+        "Right": {
+            "X": 0,
+            "Y": 0,
+            "Z": 0,
+            "EnableX": true,
+            "EnableY": false,
+            "EnableZ": true,
+            "SizeX": 1,
+            "SizeY": 3,
+            "SizeZ": 1,
+            "SkinColor": {
+                "r": 0.9058823585510254,
+                "g": 0.7098039388656616,
+                "b": 0.5686274766921997,
+                "a": 1.0
+            }
+        },
+        "Mirrored": true
+    },
+    "LegD": {
+        "Left": {
+            "X": 0,
+            "Y": 0,
+            "Z": 0,
+            "EnableX": true,
+            "EnableY": false,
+            "EnableZ": true,
+            "SizeX": 1,
+            "SizeY": 2,
+            "SizeZ": 1,
+            "SkinColor": {
+                "r": 0.9058823585510254,
+                "g": 0.7098039388656616,
+                "b": 0.5686274766921997,
+                "a": 1.0
+            }
+        },
+        "Right": {
+            "X": 0,
+            "Y": 0,
+            "Z": 0,
+            "EnableX": true,
+            "EnableY": false,
+            "EnableZ": true,
+            "SizeX": 1,
+            "SizeY": 2,
+            "SizeZ": 1,
+            "SkinColor": {
+                "r": 0.9058823585510254,
+                "g": 0.7098039388656616,
+                "b": 0.5686274766921997,
+                "a": 1.0
+            }
+        },
+        "Mirrored": true
+    },
+    "Foot": {
+        "Left": {
+            "X": 0,
+            "Y": 0,
+            "Z": 0,
+            "EnableX": true,
+            "EnableY": false,
+            "EnableZ": true,
+            "SizeX": 1,
+            "SizeY": 1,
+            "SizeZ": 1,
+            "SkinColor": {
+                "r": 0.9058823585510254,
+                "g": 0.7098039388656616,
+                "b": 0.5686274766921997,
+                "a": 1.0
+            }
+        },
+        "Right": {
+            "X": 0,
+            "Y": 0,
+            "Z": 0,
+            "EnableX": true,
+            "EnableY": false,
+            "EnableZ": true,
+            "SizeX": 1,
+            "SizeY": 1,
+            "SizeZ": 1,
+            "SkinColor": {
+                "r": 0.9058823585510254,
+                "g": 0.7098039388656616,
+                "b": 0.5686274766921997,
+                "a": 1.0
+            }
+        },
+        "Mirrored": true
+    },
+    "ArmU": {
+        "Left": {
+            "X": 0,
+            "Y": 0,
+            "Z": 0,
+            "EnableX": true,
+            "EnableY": true,
+            "EnableZ": true,
+            "SizeX": 1,
+            "SizeY": 3,
+            "SizeZ": 1,
+            "SkinColor": {
+                "r": 0.8584905862808228,
+                "g": 0.6913316249847412,
+                "b": 0.5709772109985352,
+                "a": 1.0
+            }
+        },
+        "Right": {
+            "X": 0,
+            "Y": 0,
+            "Z": 0,
+            "EnableX": false,
+            "EnableY": true,
+            "EnableZ": true,
+            "SizeX": 1,
+            "SizeY": 3,
+            "SizeZ": 1,
+            "SkinColor": {
+                "r": 0.9058823585510254,
+                "g": 0.7098039388656616,
+                "b": 0.5686274766921997,
+                "a": 1.0
+            }
+        },
+        "Mirrored": true
+    },
+    "ArmD": {
+        "Left": {
+            "X": 0,
+            "Y": 0,
+            "Z": 0,
+            "EnableX": true,
+            "EnableY": true,
+            "EnableZ": true,
+            "SizeX": 1,
+            "SizeY": 2,
+            "SizeZ": 1,
+            "SkinColor": {
+                "r": 0.9058823585510254,
+                "g": 0.7098039388656616,
+                "b": 0.5686274766921997,
+                "a": 1.0
+            }
+        },
+        "Right": {
+            "X": 0,
+            "Y": 0,
+            "Z": 0,
+            "EnableX": false,
+            "EnableY": true,
+            "EnableZ": true,
+            "SizeX": 1,
+            "SizeY": 2,
+            "SizeZ": 1,
+            "SkinColor": {
+                "r": 0.9058823585510254,
+                "g": 0.7098039388656616,
+                "b": 0.5686274766921997,
+                "a": 1.0
+            }
+        },
+        "Mirrored": true
+    },
+    "Hand": {
+        "Left": {
+            "X": 0,
+            "Y": 0,
+            "Z": 0,
+            "EnableX": true,
+            "EnableY": true,
+            "EnableZ": true,
+            "SizeX": 1,
+            "SizeY": 1,
+            "SizeZ": 1,
+            "SkinColor": {
+                "r": 0.9058823585510254,
+                "g": 0.7098039388656616,
+                "b": 0.5686274766921997,
+                "a": 1.0
+            }
+        },
+        "Right": {
+            "X": 0,
+            "Y": 0,
+            "Z": 0,
+            "EnableX": false,
+            "EnableY": true,
+            "EnableZ": true,
+            "SizeX": 1,
+            "SizeY": 1,
+            "SizeZ": 1,
+            "SkinColor": {
+                "r": 0.9058823585510254,
+                "g": 0.7098039388656616,
+                "b": 0.5686274766921997,
+                "a": 1.0
+            }
+        },
+        "Mirrored": true
+    }
+}
