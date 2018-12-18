@@ -6,11 +6,11 @@ public static class IsoCamera
 
     public static void Init()
     {
-        Camera.main.transform.position = new Vector3(0, -0.5f, 0);
+        Camera.main.transform.position = new Vector3(0, 0.5f, 0);
         Camera.main.transform.eulerAngles = new Vector3(30, -45, 0);
         Camera.main.orthographic = true;
-        Camera.main.orthographicSize = 5;
-        Camera.main.nearClipPlane = -10;
+        Camera.main.orthographicSize = 27;
+        Camera.main.nearClipPlane = -20;
         Camera.main.farClipPlane = 100;
     }
 
