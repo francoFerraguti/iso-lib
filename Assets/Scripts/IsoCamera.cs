@@ -5,8 +5,9 @@ public static class IsoCamera
     private static bool zooming = false;
     public static float zoomMultiplier = 1.4f;
     public static int zoomSteps = 12;
-    public static int rotationSpeed = 4; //can be 1, 2 or 4
+
     private static bool rotating = false;
+    public static int rotationSpeed = 4; //can be 1, 2 or 4
 
     public static void Init()
     {
@@ -37,25 +38,6 @@ public static class IsoCamera
         yield break;
     }
 
-    public static IEnumerator RotateCounterClockwise()
-    {
-        if (rotating)
-        {
-            yield break;
-        }
-        rotating = true;
-
-        for (int angles = 0; angles < 44 / rotationSpeed; angles++)
-        {
-            Camera.main.transform.eulerAngles = new Vector3(30, Camera.main.transform.eulerAngles.y - rotationSpeed - Frani.GetInBetween(-3, 3, 44 / rotationSpeed, angles), 0);
-            yield return null;
-        }
-
-        Camera.main.transform.eulerAngles = new Vector3(30, Camera.main.transform.eulerAngles.y - 1, 0);
-        rotating = false;
-        yield break;
-    }
-
     public static IEnumerator RotateClockwise()
     {
         if (rotating)
@@ -71,6 +53,25 @@ public static class IsoCamera
         }
 
         Camera.main.transform.eulerAngles = new Vector3(30, Camera.main.transform.eulerAngles.y + 1, 0);
+        rotating = false;
+        yield break;
+    }
+
+    public static IEnumerator RotateCounterClockwise()
+    {
+        if (rotating)
+        {
+            yield break;
+        }
+        rotating = true;
+
+        for (int angles = 0; angles < 44 / rotationSpeed; angles++)
+        {
+            Camera.main.transform.eulerAngles = new Vector3(30, Camera.main.transform.eulerAngles.y - rotationSpeed - Frani.GetInBetween(-3, 3, 44 / rotationSpeed, angles), 0);
+            yield return null;
+        }
+
+        Camera.main.transform.eulerAngles = new Vector3(30, Camera.main.transform.eulerAngles.y - 1, 0);
         rotating = false;
         yield break;
     }
