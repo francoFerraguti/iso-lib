@@ -12,6 +12,15 @@ public class TestingHelperScene1 : MonoBehaviour
 
     void Update()
     {
-        IsoCamera.Zoom(-Input.GetAxis("Mouse ScrollWheel"));
+        StartCoroutine(IsoCamera.Zoom(-Input.GetAxis("Mouse ScrollWheel")));
+
+        if (Input.GetKeyDown("a"))
+        {
+            StartCoroutine(IsoCamera.RotateClockwise());
+        }
+        if (Input.GetKeyDown("d"))
+        {
+            StartCoroutine(IsoCamera.RotateCounterClockwise());
+        }
     }
 }
