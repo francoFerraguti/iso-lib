@@ -3,37 +3,31 @@ using System.IO;
 using System.Collections;
 public static class IsoMap
 {
-    public static int[,] map;
+    public static string[,] map;
+    public static GameObject[,] tiles;
     public static int width = 0;
     public static int height = 0;
+    public static float tileWidth = 6.4f;
+    public static float tileHeight = 6.4f;
 
     public static void Load(string mapPath)
     {
         Read(mapPath);
         Create();
+        tiles[2, 2].SetActive(false);
     }
 
-    private static void CreateTile(int x, int y)
+    private static GameObject CreateTile(int x, int y)
     {
-        Vector3 topLeft = new Vector3(-6.4f * (float)map.GetLength(0) / 2.0f, 0, 6.4f * (float)map.GetLength(1) / 2.0f);
-        Vector3 displacement = new Vector3(6.4f * x, 0, -6.4f * y);
-        switch (map[x, y])
+        if (map[x, y] == "0")
         {
-            case 0:
-                break;
-            case 1:
-                MonoBehaviour.Instantiate(Resources.Load("Prefabs/TestGrass2"), topLeft + displacement, Quaternion.identity);
-                break;
-            case 2:
-                MonoBehaviour.Instantiate(Resources.Load("Prefabs/TestGrass"), topLeft + displacement, Quaternion.identity);
-                break;
-            case 3:
-                MonoBehaviour.Instantiate(Resources.Load("Prefabs/TestRock"), topLeft + displacement, Quaternion.identity);
-                break;
-            case 4:
-                MonoBehaviour.Instantiate(Resources.Load("Prefabs/TestWater"), topLeft + displacement, Quaternion.identity);
-                break;
+            return null;
         }
+
+        Vector3 topLeft = new Vector3(-tileWidth * (float)map.GetLength(0) / 2.0f, 0, tileHeight * (float)map.GetLength(1) / 2.0f);
+        Vector3 displacement = new Vector3(tileWidth * x, 0, -tileHeight * y);
+
+        return (GameObject)MonoBehaviour.Instantiate(Resources.Load(IsoResources.Get(map[x, y])), topLeft + displacement, Quaternion.identity);
     }
 
     private static void Create()
@@ -42,7 +36,7 @@ public static class IsoMap
         {
             for (int j = 0; j < map.GetLength(0); j++)
             {
-                CreateTile(j, i);
+                tiles[j, i] = CreateTile(j, i);
             }
         }
     }
@@ -59,7 +53,8 @@ public static class IsoMap
         }
 
         reader = new StreamReader(mapPath);
-        map = new int[width, height];
+        map = new string[width, height];
+        tiles = new GameObject[width, height];
         int rowCount = 0;
         int columnCount = 0;
 
@@ -67,9 +62,11 @@ public static class IsoMap
         {
             for (rowCount = 0; rowCount < line.Length; rowCount++)
             {
-                map[rowCount, columnCount] = line[rowCount] - 48;
+                map[rowCount, columnCount] = line[rowCount].ToString();
             }
             columnCount++;
         }
+
+        Frani.DebugMatrix(map);
     }
 }

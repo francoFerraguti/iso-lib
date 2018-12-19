@@ -1,4 +1,3 @@
-load maps
 grid shader
 procedurally generate maps
 player

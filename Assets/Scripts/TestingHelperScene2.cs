@@ -6,6 +6,7 @@ public class TestingHelperScene2 : MonoBehaviour
 {
     void Awake()
     {
+        IsoResources.Load("Assets/Config/Resources.cfg");
         IsoCamera.Init();
         IsoMap.Load("Assets/Maps/TestMap1.map");
     }
